@@ -1,0 +1,13 @@
+=clearfix()
+	&:before,
+	&:after
+		content: ""
+		display: table
+
+	&:after
+		clear: both
+
+=section($hide: hidden, $h: auto, $w: 100%)
+	overflow: $hide
+	width: $w
+	height: $h
